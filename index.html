@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Vera Sifa Nuroja</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+<style>
+     body {
+        background-color: #F7F7F7;
+        color: #a2beef;
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        }
+
+    .navbar {
+        transition: background-color 0.3s;
+        }
+
+    .navbar-light {
+        background-color: #FFB3BA;
+        }
+
+    .nav-link:hover {
+        color: #FF677D;
+        text-decoration: underline;
+        }
+
+    .card {
+         background-color: #FFE3E3;
+        color: #a2beef;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(162, 190, 239, 0.1);
+        }
+
+     .dark-mode {
+         background-color: #a2beef;
+        color: #fff;
+        }
+
+    .dark-mode .navbar-light {
+        background-color: #a2beef;
+        }
+
+    .btn-danger {
+        background-color: #FFB3BA;
+        border: none;
+        }
+
+    .section-header {
+        margin-bottom: 50px;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #FF677D;
+        }
+
+    .icon-link {
+        margin: 0 5px;
+        font-size: 30px;
+        color: inherit;
+        }
+
+     @media (max-width: 576px) {
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        .section-header {
+            font-size: 1.5rem;
+        }
+
+        .hero-background {
+            height: 50vh;
+         }
+     }
+
+     @media (min-width: 768px) {
+        .section-header {
+        font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+    <body>
+         <nav class="navbar navbar-expand-lg navbar-light" id="navbar" style="border-bottom: 2px solid #FFC3C3;">
+            <div class="container">
+                <a class="navbar-brand" href="#"
+                    style="color: #a2beef; font-family: 'Arial Black', sans-serif; font-size: 1.5rem;">vsifanuroja</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="background-color: #a2beef;"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-2"><a class="nav-link" href="#hero">Beranda</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link" href="#about">Tentang Saya</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link" href="#projects">Portofolio</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link" href="#clients">Clients</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link" href="#blog">Blog</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item">
+                        <button class="btn btn-outline-light" id="toggleBtn">🌙</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="hero" style="padding: 100px 20px; text-align: center; position: relative; overflow: hidden;">
+            <div class="hero-background" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: -1; background-image: url('profil.jpeg'); background-size: cover; background-position: center;">
+            </div>
+            <div class="container d-flex align-items-center justify-content-center flex-column"
+                style="max-width: 1200px; height: 100%;">
+                <h1 style="font-size: 2.5rem; font-weight: 600;">Hello, I'm Vera</h1>
+                <a href="#about" class="btn btn-outline-light" style="background-color: #FF677D; padding: 10px 20px; font-size: 1rem;">Hear Me</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" style="background: linear-gradient(to right, #FFB3BA, #FF677D); padding: 60px 20px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <img src="vsifaa.jpeg" alt="About Me" class="img-fluid rounded mt-3">
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <div style="background-color: rgba(0, 0, 0, 0.7); padding: 30px; border-radius: 15px; height: 100%;">
+                            <h2 class="text-white" style="font-size: 2rem;">About Me</h2>
+                            <p class="text-white" style="font-size: 1.1rem;">
+                                Saya adalah siswa jurusan Pengembangan Perangkat Lunak dan Gim yang memiliki ketertarikan
+                                pada dunia politik dan dinamika sosial.
+                            </p>
+                            <p class="text-white" style="font-size: 1.1rem;">
+                                Selama pembelajaran, saya telah berpartisipasi dalam berbagai proyek
+                                kolaboratif dan individu, yang membantu saya mengembangkan kemampuan problem-solving, manajemen
+                                waktu, dan keterampilan komunikasi.
+                            </p>
+                            <a href="#contact" class="btn btn-outline-light" style="font-size: 1rem;">Contact Me</a>
+
+                            <div style="display: flex; justify-content: center; margin-top: 30px; flex-direction: column; align-items: center;">
+                                <div>
+                                    <p class="text-white" style="margin-top: 10px;">Follow me on:</p>
+                                    <a href="https://github.com/vsifanuroja" class="icon-link"><span
+                                            class="bi-github"></span></a>
+                                    <a href="https://instagram.com/racarnation" class="icon-link"><span
+                                            class="bi-instagram"></span></a>
+                                    <a href="https://facebook.com/vsifan" class="icon-link"><span
+                                            class="bi-facebook"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="container py-5">
+            <h2 class="text-center mb-5 section-header">My Latest Projects</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <img src="project1.jpeg" alt="Project 1" class="img-fluid rounded">
+                    <h4 class="mt-3">Project 1</h4>
+                    <p>Web Galeri</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <img src="project2.jpeg" alt="Project 2" class="img-fluid rounded">
+                    <h4 class="mt-3">Project 2</h4>
+                    <p>Web Product</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <img src="project3.jpeg" alt="Project 3" class="img-fluid rounded">
+                    <h4 class="mt-3">Project 3</h4>
+                    <p>Project Bootstrap</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients Section -->
+        <section id="clients" style="background-color: #ffd1d6; color: white; padding: 100px 20px; text-align: center;">
+            <div class="container">
+                <h2 class="section-header">Clients</h2>
+                <p style="color: #d1d9e6; font-size: 20px;">Yang Pernah Bekerjasama</p>
+                <div class="client-logos d-flex justify-content-center flex-wrap" style="margin-top: 50px;">
+                    <img src="gogle.webp" alt="Google" style="max-width: 150px; filter: invert(100%); margin: 10px;">
+                    <img src="traveloka.webp" alt="Traveloka" style="max-width: 150px; filter: invert(100%); margin: 10px;">
+                    <img src="tokopedia.png" alt="Tokopedia" style="max-width: 150px; filter: invert(100%); margin: 10px;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" style="background-color: #FFEBE7; color: #a2beef; padding: 60px 20px;">
+            <div class="container">
+                <h2 class="text-center mb-5 section-header">Blog</h2>
+                <h5 class="text-center mb-4">Stay tuned for updates and insights </h5>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card" style="border: none; height: 300px;"> <!-- Set fixed height -->
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <h5 class="card-title">LIPUTAN6</h5>
+                                <p class="card-text">Menyambung Dunia, Mencerdaskan Masyarakat</p>
+                                <a href="https://www.liputan6.com/" class="btn btn-outline-danger">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card" style="border: none; height: 300px;"> <!-- Set fixed height -->
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <h5 class="card-title">TEMPO.CO</h5>
+                                <p class="card-text">BICARA FAKTA</p>
+                                <a href="https://www.tempo.co/" class="btn btn-outline-danger">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card" style="border: none; height: 300px;"> <!-- Set fixed height -->
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <h5 class="card-title">KOMPAS.COM</h5>
+                                <p class="card-text">JERNIH MELIHAT DUNIA</p>
+                                <a href="https://www.kompas.com/" class="btn btn-outline-danger">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container py-5">
+            <h2 class="text-center mb-5 section-header">Contact Me</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-danger">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="text-center py-4" style="background-color: #FFB3BA; color: #8a9bba;">
+            <div class="container">
+                <p class="mb-0">&copy; 2024 Vera Sifa Nuroja. All rights reserved.</p>
+                <div style="display: flex; justify-content: center; margin-top: 10px;">
+                    <a href="https://github.com/vsifanuroja" class="icon-link"><span class="bi-github"></span></a>
+                    <a href="https://instagram.com/racarnation" class="icon-link"><span class="bi-instagram"></span></a>
+                    <a href="https://facebook.com/vsifan" class="icon-link"><span class="bi-facebook"></span></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            const toggleBtn = document.getElementById('toggleBtn');
+            const body = document.body;
+            const navbar = document.getElementById('navbar');
+
+            toggleBtn.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+                navbar.classList.toggle('navbar-dark');
+                navbar.classList.toggle('navbar-light');
+                toggleBtn.textContent = body.classList.contains('dark-mode') ? '🌞' : '🌙';
+            });
+        </script>
+    </body>
+</html>
